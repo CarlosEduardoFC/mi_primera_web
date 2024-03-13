@@ -1,0 +1,157 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+ol, ul {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+header {
+    display: flex;
+    background-color: rgb(103, 103, 103);
+    justify-content: space-between;
+    align-items: center;
+    padding-right:2em ;
+}
+.nombre{
+    color: rgb(66, 192, 17);
+}
+header a i {
+    color: white;
+    font-size: 3em;
+    padding: 0.5em;
+}
+header nav ul {
+    display: flex;
+    gap: 1.3em;
+}
+header nav ul li a{
+    color:white;
+}
+.seccion-1{
+    background-color: #eeeeee;
+    display: flex;  
+    justify-content: center;
+    padding: 2em;
+    text-align: right;
+}
+.acerca-imagen{
+    display: flex;  
+    height: 200px;
+    width: 200px;
+    padding: 2em;
+}
+.seccion-2 img{
+    width: 100%;
+}
+nav{
+    display: block;
+}
+.fuente-acento{
+    color: burlywood;
+}
+#footer{
+    background-color: black;
+    padding: 1em;
+}
+#check{
+    display: none;
+}
+.checkbtn{
+    font-size: 25px;
+    color: red;
+    float: rigth;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor:pointer;
+    display: none;
+}
+#redes-sociales{
+    color: white;
+}
+footer div nav ul{
+    padding: 0px 0px 0px 0px;
+}
+a i.fa-solid.fa-heart.fixed {
+    position: fixed;
+    bottom: 22px;
+    right: 39px;
+}
+.seccion-2{
+    background-color: bisque;
+}
+.seccion-3{
+    background-color: rgb(240, 229, 216);
+    display: flex;
+    margin: 5px 5px;
+    justify-content: center;
+    text-align: center;
+}
+.seccion-3 img{
+    height: 200px;
+    padding: 0em;
+    width: 200px;
+    border-radius: 50px;
+    display: flex;
+    margin: 15px auto;
+}
+.descripcion-trabajo{
+        margin: 10px auto;
+        padding-right: 20px;
+        text-align: center;
+}
+.seccion-3 h4{
+    padding-left: 50px;
+}
+.seccion-3 p{
+    padding-left: 40px;
+}
+@media(max-width:768px){
+    .seccion-1{
+        flex-direction: column;
+        text-align: center;
+    }
+    .acerca-imagen{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+    .seccion-3{
+        flex-direction: column;
+        padding: 50px 50px;
+    }
+    .trabajo{
+        padding: 30px 30px;
+    }
+   .checkbtn{
+    display: block;
+   }
+   nav ul{
+    position: fixed;
+    width: 40%;
+    height: 100vh;
+    background: red;
+    text-align: center;
+    top: 80px;
+    left: 100%;
+    transition: all 0.8s;
+
+   }
+    #check:checked ~ ul{
+    left: 0%;
+    display: block;
+    background-color: bisque;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    #check:checked ~.checkbtn{
+        color: blue;
+    }
